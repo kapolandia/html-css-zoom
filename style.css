@@ -14,7 +14,9 @@ header{
 }
 
 main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin-top: 20px;
 }
 
 footer{
@@ -53,3 +55,28 @@ header .row > :nth-child(2){
 
 /* #region MAIN */
 
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item{
+    width: 220px;
+    height: 130px;
+    background-image: url(https://fastly.picsum.photos/id/724/300/200.jpg?hmac=noXikCG-jTwpsWI_sfPENFpGvq1UtFKfiy4ARKbcdN0);
+    position: relative;
+}
+
+.user-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.698);
+}
