@@ -26,6 +26,8 @@ footer{
 
 .row{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .row{
@@ -79,4 +81,49 @@ header .row > :nth-child(2){
     font-size: 13px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.698);
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-item > :nth-child(2){
+    margin-top: 5px;
+}
+
+.footer-item i{
+    font-size: 25px;
+}
+
+.row.space-between{
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.footer-section{
+    gap: 20px;
+    color: #fff;
+}
+
+.green{
+    color: rgb(37, 219, 67);
+}
+
+.exit{
+    background-color: #4A4A4A;
+    color: red;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 13px;
 }
